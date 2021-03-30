@@ -11,16 +11,17 @@ public class Date {
 			{
 				System.out.println("Wrong input");
 			}
-			if (date > 10 && date < 21)
-			{
-				System.out.println(date+"th");
-			}
+			
 			else {
-				if(date%10==0)
+				if (date > 10 && date < 21)
 				{
 					System.out.println(date+"th");
 				}
-				if(date%10==1)
+				else if(date%10==0)
+				{
+					System.out.println(date+"th");
+				}
+				else if(date%10==1)
 				{
 					System.out.println(date+"st");
 				}
